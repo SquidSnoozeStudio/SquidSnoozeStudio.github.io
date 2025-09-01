@@ -9,9 +9,9 @@
 .main{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(23, 9, 150, 0.5), 
-                rgba(0,0,0,0.5)),
-                url(linesBG.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(163, 192, 255, 0.2), 
+                rgba(34, 38, 255, 0.2)),
+                url(Images/linesBG.jpg) no-repeat center/cover;
     display: flex;
     flex-direction: column;
 
@@ -27,5 +27,33 @@
     justify-content: space-between;
     position: relative;
     flex-wrap: wrap;
+}
+
+.icon{
+    color: #ffd23d;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.menu ul{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover{
+    color: #ffd23d;
 }
 
