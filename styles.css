@@ -3,15 +3,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Sansation';
+    font-family: 'sansation';
 }
 
 .main{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(rgba(23, 9, 150, 0.5), 
-                rgba(0,0,0,0.5)) 
-                url(Images/linesBG.jpg) no-repeat center/cover;
+                rgba(0,0,0,0.5)),
+                url(linesBG.jpg) no-repeat center/cover;
     display: flex;
     flex-direction: column;
 
