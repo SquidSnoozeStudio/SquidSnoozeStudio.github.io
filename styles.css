@@ -1,5 +1,31 @@
-body {
-    margin: 10;
-    background: purple;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sansation';
 }
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(23, 9, 150, 0.5), 
+                rgba(0,0,0,0.5)) 
+                url(Images/linesBG.jpg) no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.navbar{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
