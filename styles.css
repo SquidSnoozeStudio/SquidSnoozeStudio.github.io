@@ -9,7 +9,7 @@
 .main{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 81, 255, 0.35), 
+    background: linear-gradient(rgba(0, 145, 255, 0.35), 
                 rgba(64, 0, 255, 0.35)),
                 url(Images/linesBG.jpg) no-repeat center/cover;
     display: flex;
@@ -90,7 +90,7 @@
 }
 
 .text-section h1 span{
-    color: #1bffe1;
+    color: #ffd23d;
 }
 
 
