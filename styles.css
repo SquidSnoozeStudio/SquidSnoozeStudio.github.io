@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(rgba(0, 81, 255, 0.35), 
-                rgba(0, 4, 255, 0.35)),
+                rgba(64, 0, 255, 0.35)),
                 url(Images/linesBG.jpg) no-repeat center/cover;
     display: flex;
     flex-direction: column;
@@ -34,6 +34,15 @@
     font-size: 35px;
     cursor: pointer;
 }
+
+
+.logo-image{
+    width: 100px;
+    border: none;
+    border-radius: 1000px;
+    content: url(Images/Squid\ Snooze\ Studio\ Logo\ Small.png);
+}
+
 
 .menu ul{
     display: flex;
