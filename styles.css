@@ -9,8 +9,8 @@
 .main{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(163, 192, 255, 0.2), 
-                rgba(34, 38, 255, 0.2)),
+    background: linear-gradient(rgba(0, 81, 255, 0.35), 
+                rgba(0, 4, 255, 0.35)),
                 url(Images/linesBG.jpg) no-repeat center/cover;
     display: flex;
     flex-direction: column;
@@ -56,4 +56,39 @@
 .menu ul li a:hover{
     color: #ffd23d;
 }
+
+
+
+.content{
+    width: 90%;
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: #f8f9fa;
+}
+
+.text-section{
+    flex: 1;
+    min-width: 300px;
+
+}
+
+.text-section h1{
+    font-size: 50px;
+}
+
+.text-section h1 span{
+    color: #1bffe1;
+}
+
+
+.par{
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+
 
