@@ -108,37 +108,30 @@
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: auto;
 }
 
 .project-grid-item{
-    border: 2px white;
+    position: relative;
     place-items: center;
     padding: 30px;
     display: grid;
 }
 
 
-.op-loop{
-    cursor: pointer;
-    background-color: #f8f9fa00;
-    width: 200px;
-    height: 200px;
-    transition: .2s;
-    border-radius: 15px;
-    border: solid 0px #ffd23d;
-    color: transparent;
+.container{
+    position: relative;
+    width: 100%;
 }
 
-.op-loop:hover{
-    border: solid 10px #ffd23d;
-    background-color: #ffd23d5b;
-    color: #f8f9fa;
-}
 
-.loophole{
+.image{
+    object-fit: cover;
     display: block;
     width: 100%;
     height: auto;
+    border: solid 5px #ffd23d;
+    border-radius: 15px;
 }
 
 .overlay{
@@ -147,51 +140,31 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: 100% - 30px;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #ffd23d;
+    background: linear-gradient(rgb(177, 153, 255), rgb(167, 217, 255));
+    border: solid 5px #ffd23d;
+    border-radius: 15px;
 
 }
 
-.overlay:hover{
-    opacity: .8;
+.container:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
 }
 
 .overlay-text{
     color: white;
     font-size: 30px;
+    font-weight: bold;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-}
-
-
-.fishnships{
-    cursor: pointer;
-    background-image: url(Images/Squid\ Snooze\ Studio\ Logo\ Small.png);
-    width: 200px;
-    height: 200px;
-
-}
-
-.shroud{
-    cursor: pointer;
-    background-image: url(Images/Squid\ Snooze\ Studio\ Logo\ Small.png);
-    width: 200px;
-    height: 200px;
-    
-}
-
-.axiom{
-    cursor: pointer;
-    background-image: url(Images/Squid\ Snooze\ Studio\ Logo\ Small.png);
-    width: 200px;
-    height: 200px;
-
 }
 
 
