@@ -19,15 +19,18 @@
 }
 
 .navbar{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
+    min-height: 175px;
+    margin: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
     position: relative;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 0px;
+    gap: 30px;
+    
     /*background: linear-gradient(rgba(255, 255, 255, 1), rgba(0,0,0,rgba(255, 255, 255, 1)));
     backdrop-filter: blur(15px);*/
 }
@@ -126,7 +129,6 @@
 .project-grid-item:hover{
     width: 220px;
 }
-
 
 
 .container{
