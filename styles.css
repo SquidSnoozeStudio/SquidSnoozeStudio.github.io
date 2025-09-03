@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-
+    background-attachment: fixed;
 }
 
 .navbar{
@@ -33,7 +33,7 @@
 }
 
 .icon{
-    color: #ffd23d;
+    color: #ffdb66;
     font-size: 35px;
     cursor: pointer;
 }
@@ -67,14 +67,13 @@
 }
 
 .menu ul li a:hover{
-    color: #ffd23d;
+    color: #ffdb66;
 }
 
 
 
 .content{
-    width: 90%;
-    width: 1200px;
+    width: min(90%, 1200px);
     margin: 50px auto;
     display: flex;
     justify-content: space-between;
@@ -87,14 +86,15 @@
     flex: 1;
     min-width: 300px;
 
+
 }
 
 .text-section h1{
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .text-section h1 span{
-    color: #ffd23d;
+    color: #ffdb66;
 }
 
 
@@ -106,17 +106,27 @@
 
 .project-grid{
     width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     margin: auto;
 }
+
 
 .project-grid-item{
     position: relative;
     place-items: center;
+    width: 200px;
     padding: 30px;
-    display: grid;
+    transition: .2s;
 }
+
+.project-grid-item:hover{
+    width: 220px;
+}
+
 
 
 .container{
@@ -130,7 +140,7 @@
     display: block;
     width: 100%;
     height: auto;
-    border: solid 5px #ffd23d;
+    border: solid 5px #ffdb66;
     border-radius: 15px;
 }
 
@@ -145,7 +155,7 @@
     opacity: 0;
     transition: .5s ease;
     background: linear-gradient(rgb(177, 153, 255), rgb(167, 217, 255));
-    border: solid 5px #ffd23d;
+    border: solid 5px #ffdb66;
     border-radius: 15px;
 
 }
@@ -165,6 +175,46 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+.linkbuttonsmenu{
+    display: flex;
+    min-height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-content: center;
+
+}
+
+.linkbuttons{
+    height: 50px;
+    width: 50px;
+    background-color: #f8f9fa;
+    font-size: 30pt;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.linkbuttons:hover{
+    background-color: #ffdb66;
+    height: 75px;
+    width: 75px;
+}
+
+.linkbuttons:hover .buttonicons{
+    width: 100%;
+}
+
+.buttonicons{
+    width: 50%;
+    transition: .35s;
 }
 
 
