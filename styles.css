@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+
+:root{
+    /* Purple Original */
+    /* --dark: rgb(11, 29, 81);
+    --med: rgb(114, 92, 173);
+    --light: rgb(140, 205, 235);
+    --highlight: #FFE3A9; */
+
+    /* Deep Purple */
+    /* --dark: #0C134F;
+    --med: #1D267D;
+    --light: #5C469C;
+    --highlight: #D4ADFC; */
+
+    --dark: #000814;
+    --med: #001d3d;
+    --light: #004a8f;
+    --highlight: #ffc300;
+
+    /* Golden Twilight */
+    /* --dark: #000814;
+    --med: #001d3d;
+    --light: #003566;
+    --highlight: #ffc300; */
+
+
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,10 +37,11 @@
 
 .main{
     width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 145, 255, 0.35), 
-                rgba(64, 0, 255, 0.35)),
+    min-height: calc(100vh - 150px);
+    background: linear-gradient(var(--light), 
+                var(--med)),
                 url(Images/linesBG.jpg) no-repeat center/cover;
+
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -26,10 +56,12 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-    position: relative;
     flex-wrap: wrap;
     padding: 0px;
     gap: 30px;
+
+    position: relative;
+    background-color: var(--dark);
     
 
     /*background: linear-gradient(to bottom, rgba(18, 0, 63, 1) 80%, rgba(18, 0, 63, 0));*/
@@ -40,16 +72,33 @@
     backdrop-filter: blur(15px);*/
 }
 
+.bottombar{
+    width: 100%;
+    min-height: 150px;
+    margin: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+
+    position: relative;
+    bottom: 0;
+    background-color: var(--dark);
+
+}
+
 .icon{
-    color: #ffdb66;
+    color: var(--highlight);
     font-size: 35px;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 
 .logo-image{
     width: 100px;
-    border: #ffdb66 solid;
+    border: var(--highlight) solid;
     border-radius: 1000px;
     content: url(Images/Squid\ Snooze\ Studio\ Logo\ Small.png);
     margin: 15px;
@@ -57,6 +106,11 @@
 
 }
 
+
+.menu{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 .menu ul{
     display: flex;
@@ -77,26 +131,36 @@
 }
 
 .menu ul li a:hover{
-    color: #ffdb66;
+    color: var(--highlight);
 }
 
 
 
 .content{
-    width: min(90%, 1200px);
+    width: min(75%, 800px);
     margin: 50px auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    color: #f8f9fa;
+    color: #ffff;
 }
+
+.content-short{
+    width: min(75%, 800px);
+    margin: 50px auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: #ffff;
+}
+
 
 .text-section{
     flex: 1;
     min-width: 300px;
-
-
 }
 
 .text-section h1{
@@ -104,14 +168,16 @@
 }
 
 .text-section h1 span{
-    color: #ffdb66;
+    color: var(--highlight);
 }
 
 
 .par{
-    margin: 20px 0;
+    margin: 20px auto;
     line-height: 1.5;
     font-size: 15pt;
+    width: 85%;
+    align-content: center;
 }
 
 
@@ -122,20 +188,35 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: auto;
+    margin: 0px auto;
 }
 
 
 .project-grid-item{
     position: relative;
     place-items: center;
-    width: 25%;
-    padding: 30px;
+    width: 85%;
     transition: .2s;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .project-grid-item:hover{
-    width: 28%;
+    width: 100%;
+}
+
+
+.project-grid-item-holder{
+    aspect-ratio: 1/1;
+    position: relative;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 25%;
+    padding: 3%;
+    display: flex;
 }
 
 .artwork-grid-item{
@@ -160,7 +241,7 @@
     display: block;
     width: 100%;
     height: auto;
-    border: solid 5px #ffdb66;
+    border: solid 5px var(--highlight);
     border-radius: 15px;
 }
 
@@ -169,7 +250,7 @@
     display: block;
     width: 100%;
     height: auto;
-    border: solid 5px #ffdb66;
+    border: solid 5px var(--highlight);
     border-radius: 5px;
 }
 
@@ -185,8 +266,9 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background: linear-gradient(rgb(177, 153, 255), rgb(167, 217, 255));
-    border: solid 5px #ffdb66;
+    background: #0B1D51;
+    /*background: linear-gradient(rgb(140, 205, 235), rgb(114, 92, 173));*/
+    border: solid 5px var(--highlight);
     border-radius: 15px;
 
 }
@@ -198,7 +280,7 @@
 
 .overlay-text{
     color: white;
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: bold;
     text-align: center;
     position: absolute;
@@ -225,7 +307,7 @@
 .linkbuttons{
     height: 50px;
     width: 50px;
-    background-color: #f8f9fa;
+    background-color: white;
     font-size: 30pt;
     border-radius: 100%;
     border: none;
@@ -234,13 +316,13 @@
 }
 
 .linkbuttons:hover{
-    background-color: #ffdb66;
+    background-color: var(--highlight);
     height: 75px;
     width: 75px;
 }
 
 .linkbuttons:hover .buttonicons{
-    width: 100%;
+    width: 75%;
 }
 
 .buttonicons{
@@ -268,3 +350,78 @@
     transition: .2s;
 }
 
+
+.steam-widget{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+
+}
+
+.itch-widget{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.slider img{
+    width: calc(100% - 10px);
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.previous{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+.slide{
+    border-radius: 10px;
+    border: solid 5px var(--highlight);
+}
+
+.youtube-embed{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.youtube-embed iframe{
+    aspect-ratio: 16/9;
+    width: 90%;
+    border-radius: 10px;
+    border: solid 5px var(--highlight);
+}

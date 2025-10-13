@@ -1,2 +1,3 @@
 # SquidSnoozeStudio.github.io
-The portfolio for SquidSnoozeStudio
+This is the portfolio website for SquidSnoozeStudio. visit it here!
+https://squidsnoozestudio.github.io/
